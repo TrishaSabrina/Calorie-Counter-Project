@@ -49,6 +49,10 @@ function cleanInputString(str) {
     if(isError){
       return
     }
+    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+    const remainingCalories= budgetCalories-consumedCalories+exerciseCalories;
+    const surplusOrDeficit=remainingCalories <0 ? "Surplus":"Deficit" ;
+    output.innerHTML =``;
 
   }
 
